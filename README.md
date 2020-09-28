@@ -1,5 +1,7 @@
 # Requirements
 
+[Link to Live Site](https://trelloyes-orpin.vercel.app/)
+
 You're required to create a new "create-react-app" project called trelloyes. Remove the boilerplate so you have a clean start and then focus on building 3 components: `App`, `List`, and `Card`.
 
 ## Card.js:
