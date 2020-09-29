@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './Card';
+import PropTypes from 'prop-types';
+import Card from '../Card/Card';
 
 const List = ({ header, cardIds, allCards }) => {
   return (
@@ -21,6 +22,12 @@ const List = ({ header, cardIds, allCards }) => {
       </button>
     </section>
   );
+};
+
+List.propTypes = {
+  header: PropTypes.string.isRequired,
+  cardIds: PropTypes.array.isRequired,
+  allCards: PropTypes.object.isRequired,
 };
 
 export default List;

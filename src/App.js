@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import List from './components/List';
+import PropTypes from 'prop-types';
+import Header from './components/Header/Header';
+import List from './components/List/List';
 
 function App({ store }) {
   const { lists, allCards } = store;
@@ -20,5 +21,9 @@ function App({ store }) {
     </>
   );
 }
+
+App.propTypes = {
+  store: PropTypes.object.isRequired,
+};
 
 export default App;

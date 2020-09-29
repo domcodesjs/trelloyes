@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component renders the List UI as expected 1`] = `
+<section
+  className="list"
+>
+  <header>
+    <h2>
+      Header
+    </h2>
+  </header>
+  <div
+    className="list-cards"
+  >
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          First card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Second card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Fifth card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Sixth card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Seventh card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Tenth card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Twelfth card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <div>
+        <h3>
+          Thirteenth card
+        </h3>
+        <button
+          type="button"
+        >
+          delete
+        </button>
+      </div>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+  </div>
+  <button
+    className="list-add-card"
+    type="button"
+  >
+    + Add Random Card
+  </button>
+</section>
+`;
