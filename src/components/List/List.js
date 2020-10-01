@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 
-const List = ({ header, cardIds, allCards, addCard, listId }) => {
+const List = ({ header, cardIds, allCards, addCard, listId, deleteCard }) => {
   return (
     <section className='list'>
       <header>
         <h2>{header}</h2>
       </header>
       <div className='list-cards'>
-        {cardIds.map((id) => (
-          <Card
-            key={id}
-            title={allCards[id].title}
-            content={allCards[id].content}
-          ></Card>
-        ))}
+        {cardIds.map((id) => {
+          if (!allCards[id]) {
+            return;
+          }
+          return (
+            <Card
+              listId={listId}
+              deleteCard={deleteCard}
+              key={id}
+              cardId={id}
+              title={allCards[id].title}
+              content={allCards[id].content}
+            ></Card>
+          );
+        })}
       </div>
       <button
         type='button'

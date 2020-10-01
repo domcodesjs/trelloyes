@@ -78,6 +78,20 @@ function App() {
     return setStore(storeCopy);
   };
 
+  const deleteCard = (listId, cardId) => {
+    const realListId = listId - 1;
+    const storeCopy = { ...store };
+    storeCopy.lists[realListId].cardIds = storeCopy.lists[
+      realListId
+    ].cardIds.filter((id) => id !== cardId);
+    // doesn't make sense to delete the card from the object since
+    // the lists are using the same id's in the cardIds array so
+    // deleting 1 could potentially delete it from another list
+    // ideally we want unique id's
+    // delete storeCopy.allCards[cardId];
+    return setStore(storeCopy);
+  };
+
   return (
     <>
       <Header></Header>
@@ -85,6 +99,7 @@ function App() {
         {lists.map((list) => (
           <List
             addCard={addCard}
+            deleteCard={deleteCard}
             key={list.id}
             allCards={allCards}
             header={list.header}
