@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 
-const List = ({ header, cardIds, allCards }) => {
+const List = ({ header, cardIds, allCards, addCard, listId }) => {
   return (
     <section className='list'>
       <header>
@@ -17,7 +17,11 @@ const List = ({ header, cardIds, allCards }) => {
           ></Card>
         ))}
       </div>
-      <button type='button' className='list-add-card'>
+      <button
+        type='button'
+        className='list-add-card'
+        onClick={() => addCard(listId)}
+      >
         + Add Random Card
       </button>
     </section>
@@ -27,7 +31,7 @@ const List = ({ header, cardIds, allCards }) => {
 List.propTypes = {
   header: PropTypes.string.isRequired,
   cardIds: PropTypes.array.isRequired,
-  allCards: PropTypes.object.isRequired,
+  allCards: PropTypes.object.isRequired
 };
 
 export default List;
