@@ -87,7 +87,7 @@ function App() {
     // doesn't make sense to delete the card from the object since
     // the lists are using the same id's in the cardIds array so
     // deleting 1 could potentially delete it from another list
-    // ideally we want unique id's
+    // ideally we want unique id's but uncomment below if ya want
     // delete storeCopy.allCards[cardId];
     return setStore(storeCopy);
   };
